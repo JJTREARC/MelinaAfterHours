@@ -71,9 +71,14 @@ month_names.forEach((e, index) => {
 })
 
 let month_picker = calendar.querySelector('#month-picker')
+let month_pickerClose = calendar.querySelector('.close')
 
 month_picker.onclick = () => {
     month_list.classList.add('show')
+}
+
+month_pickerClose.onclick = () => {
+    month_list.classList.toggle('show')
 }
 
 
@@ -97,9 +102,11 @@ document.querySelector('#next-year').onclick = () => {
 
 let popUp = document.querySelector('#popUpbtn')
 
+
 popUp.onclick = () => {
     popUpWindow = document.querySelector('.popUp')
     popUpWindow.classList.toggle('show')
+
 }
 
 /*/

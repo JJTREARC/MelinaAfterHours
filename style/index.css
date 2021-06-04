@@ -60,7 +60,6 @@
         width: 25vw;
         height: 100vh;
         right: 0;
-        flex-flow: column wrap;
         transform: scale(0);
     }
     

@@ -10,6 +10,6 @@ var txt = document.querySelector('.bigTxt')
 txt.onmousemove = function(f) {
     var x = f.pageX + txt.offsetLeft + txt.offsetParent.offsetLeft - 25
     var y = f.pageY + btn.offsetTop + txt.offsetParent.offsetTop - 150
-    txt.style.setProperty('--x', x + 'px')
-    txt.style.setProperty('--y', y + 'px')
+    txt.style.setProperty('--x2', x + 'px')
+    txt.style.setProperty('--y2', y + 'px')
 }

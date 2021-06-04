@@ -85,7 +85,7 @@
 }
 
 .bigTxt span.breath {
-    animation: fade2 4s;
+    animation: fade2 8s reverse;
 }
 
 .bigTxt span.activateWithouthCasue {
@@ -100,8 +100,8 @@
     --size: 0;
     content: '';
     position: absolute;
-    left: var(--x);
-    top: var(--y);
+    left: var(--x2);
+    top: var(--y2);
     width: var(--size);
     height: var(--size);
     background: radial-gradient(circle closest-side, rgba(160, 201, 228, 0.281), transparent);
