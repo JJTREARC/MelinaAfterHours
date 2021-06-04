@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.slider {
+    position: absolute;
+    float: right;
+    background-color: honeydew;
+    width: 450px;
+    height: 800px;
+}
+
+#slidergrvz {
+    float: right;
+    background-color: honeydew;
+    width: 450px;
+    height: 800px;
+}

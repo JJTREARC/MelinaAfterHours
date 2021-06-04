@@ -1,0 +1,115 @@
+@keyframes move {
+    10% {
+        text-shadow: 0px 0px 20px rgba(241, 89, 203, 0.562);
+    }
+    20% {
+        text-shadow: 0px 0px 40px rgba(241, 89, 203, 0.562);
+    }
+    30% {
+        text-shadow: 0px 0px 50px rgba(241, 89, 203, 0.562);
+    }
+    40% {
+        text-shadow: 0px 0px 60px rgba(241, 89, 203, 0.562);
+    }
+    50% {
+        text-shadow: 0px 0px 70px rgba(241, 89, 203, 0.562);
+    }
+    60% {
+        text-shadow: 0px 0px 80px rgba(241, 89, 203, 0.562);
+    }
+    70% {
+        text-shadow: 0px 0px 70px rgba(241, 89, 203, 0.562);
+    }
+    80% {
+        text-shadow: 0px 0px 60px rgba(241, 89, 203, 0.562);
+    }
+    90% {
+        text-shadow: 0px 0px 50px rgba(241, 89, 203, 0.562);
+    }
+    100% {
+        text-shadow: 0px 0px 40px rgba(241, 89, 203, 0.562);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 100;
+    }
+    95% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 100;
+    }
+    95% {
+        opacity: 0;
+    }
+}
+
+.bigTxt {
+    position: relative;
+    border: none;
+    cursor: none;
+    outline: none;
+    overflow: hidden;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-size: 150px;
+    user-select: none;
+    text-align: center;
+    letter-spacing: 2mm;
+    user-select: none;
+    animation: move infinite 4s linear alternate;
+    z-index: auto;
+}
+
+.bigTxt span {
+    position: relative;
+}
+
+.bigTxt span {
+    opacity: 0;
+    z-index: auto;
+}
+
+.bigTxt span.activate {
+    animation: fade 4s;
+}
+
+.bigTxt span.activate2 {
+    animation: fade2 4s;
+}
+
+.bigTxt span.breath {
+    animation: fade2 4s;
+}
+
+.bigTxt span.activateWithouthCasue {
+    animation: fade2 4s;
+}
+
+.bigTxt span:hover {
+    animation: fade 4s;
+}
+
+.bigTxt::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, rgba(160, 201, 228, 0.281), transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+    z-index: auto;
+}
+
+.bigTxt:hover::before {
+    --size: 200px;
+}
