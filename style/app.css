@@ -259,7 +259,7 @@
     font-family: 'Montserrat', 'sans-serif';
     font-size: 30px;
     background: radial-gradient(circle closest-side, rgba(255, 11, 52, 0.11), transparent);
-    ;
+    cursor: pointer;
 }
 
 .month-list::before {
