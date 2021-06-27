@@ -2,6 +2,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     body {
         background: rgb(18, 18, 18);
+        overflow: hidden;
     }
     
      :root {
